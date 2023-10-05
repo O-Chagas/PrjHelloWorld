@@ -1,0 +1,16 @@
+/* seletor */
+p{
+    color: blue; /* color, sempre é o texto */
+}
+
+table  {
+    border: 1px solid black; background: #0ebe17;
+}
+
+th {
+    border: 1px solid black; border-radius: 10px solid; color: #943cc7;
+}
+
+td {
+    border: 1px solid black; border-radius: 10px solid black; background: #FFFFFF;
+}
