@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProjetoHelloWorld/CSS/reset.css">
+    <link rel="stylesheet" href="../ProjetoHelloWorld/CSS/styleForm.css">
+    <title>Formulário do Torcedor</title>
+</head>
+
+<body>
+
+    <h1>Formulário do Torcedor</h1>
+    <form action="formulario.php" method="GET">
+        <fieldset>
+            <legend>Dados do Torcedor</legend>
+            <div class="componente-form">
+                <label for="nome-front"> Nome: </label>
+                <input type="text" name="nome" id="nome-front" placeholder="Digite seu nome..." required>
+            </div>
+
+            <div class="componente-form">
+                <label for="idade-front"> Idade: </label>
+                <input type="number" name="idade" id="idade-front" max="100" min="1">
+            </div>
+
+            <div class="componente-form">
+                <label for="ultima-partida-front">
+                    Última partida que viu do seu time foi em:
+                </label>
+                <input type="date" name="data-ultima-partida" id="ultima-partida-front">
+            </div>
+
+            <div class="componente-form">
+                <label for="email-front"> E-mail: </label>
+                <input type="email" name="email" id="email-front" placeholder="Digite seu e-mail..." required>
+            </div>
+
+            <div class="componente-form">
+                <label for="genero-front"> Gênero: </label>
+                <br>
+                <input type="radio" value="masculino" name="genero" id="genero-masc-front">
+                <label for="genero-masc-front"> Masculino </label>
+                <br>
+                <input type="radio" value="feminino" name="genero" id="genero-fem-front">
+                <label for="gener-fem-front"> Feminino</label>
+            </div>
+
+            <div class="componente-form">
+                <label> Opções: </label>
+                <br>
+                <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
+                <label for="socio-torcedor-front"> Tenho cartão de sócio torcedor.</label>
+                <br>
+                <input type="checkbox" name="frequencia-estadio" id="frequencia-estadio-front">
+                <label for="frequencia-estadio-front"> Vou ao estádio pelo menos uma vez por mês.</label>
+            </div>
+
+            <div class="componente-form">
+                <label for="time-front">Seu time de coração:</label>
+                <select name="time" id="time-front">
+                    <option> Escolha seu time: </option>
+                    <option value="sfc"> Pexaum</option>
+                    <option value="cu"> Curintia</option>
+                    <option value="spfc"> Bambis</option>
+                    <option value="pal"> Sem Mundial</option>
+                </select>
+            </div>
+
+            <div class="componente-form">
+                <label for="satisfacao-front">Nível de satisfação do seu time: </label>
+                <br>
+                <input type="range" name="satisfacao" id="satisfacao-front" min="0" max="10" value="5">
+            </div>
+
+            <div class="componente-form">
+                <label for="sugestao-front"> Deixe aqui sua sugestão: </label>
+                <br>
+                <textarea name="sugestao" id="sugestao-front" cols="50" rows="5"
+                    placeholder="Digite sua sugestão..."></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do seu prêmio:</legend>
+        </fieldset>
+
+        <div class="componente-form">
+            <input class="btn" type="reset" value="Limpar Dados">
+            <input class="btn" type="submit" value="Enviar">
+        </div>
+    </form>
+
+</body>
+
+</html>
