@@ -13,83 +13,158 @@
 
     <h1>Formulário do Torcedor</h1>
     <form action="formulario.php" method="GET">
-        <fieldset>
-            <legend>Dados do Torcedor</legend>
-            <div class="componente-form">
-                <label for="nome-front"> Nome: </label>
-                <input type="text" name="nome" id="nome-front" placeholder="Digite seu nome..." required>
-            </div>
+        <div class="formularios">
+            <fieldset>
+                <legend>Dados do Torcedor</legend>
+                <div class="componente-form">
+                    <label for="nome-front"> Nome: </label>
+                    <input type="text" name="nome" id="nome-front" placeholder="Digite seu nome..." required>
+                </div>
 
-            <div class="componente-form">
-                <label for="idade-front"> Idade: </label>
-                <input type="number" name="idade" id="idade-front" max="100" min="1">
-            </div>
+                <div class="componente-form">
+                    <label for="idade-front"> Idade: </label>
+                    <input type="number" name="idade" id="idade-front" max="100" min="1">
+                </div>
 
-            <div class="componente-form">
-                <label for="ultima-partida-front">
-                    Última partida que viu do seu time foi em:
-                </label>
-                <input type="date" name="data-ultima-partida" id="ultima-partida-front">
-            </div>
+                <div class="componente-form">
+                    <label for="ultima-partida-front">
+                        Última partida que viu do seu time foi em:
+                    </label>
+                    <input type="date" name="data-ultima-partida" id="ultima-partida-front">
+                </div>
 
-            <div class="componente-form">
-                <label for="email-front"> E-mail: </label>
-                <input type="email" name="email" id="email-front" placeholder="Digite seu e-mail..." required>
-            </div>
+                <div class="componente-form">
+                    <label for="email-front"> E-mail: </label>
+                    <input type="email" name="email" id="email-front" placeholder="Digite seu e-mail..." required>
+                </div>
 
-            <div class="componente-form">
-                <label for="genero-front"> Gênero: </label>
-                <br>
-                <input type="radio" value="masculino" name="genero" id="genero-masc-front">
-                <label for="genero-masc-front"> Masculino </label>
-                <br>
-                <input type="radio" value="feminino" name="genero" id="genero-fem-front">
-                <label for="gener-fem-front"> Feminino</label>
-            </div>
+                <div class="componente-form">
+                    <label for="genero-front"> Gênero: </label>
+                    <br>
+                    <input type="radio" value="masculino" name="genero" id="genero-masc-front">
+                    <label for="genero-masc-front"> Masculino </label>
+                    <br>
+                    <input type="radio" value="feminino" name="genero" id="genero-fem-front">
+                    <label for="gener-fem-front"> Feminino</label>
+                </div>
 
-            <div class="componente-form">
-                <label> Opções: </label>
-                <br>
-                <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
-                <label for="socio-torcedor-front"> Tenho cartão de sócio torcedor.</label>
-                <br>
-                <input type="checkbox" name="frequencia-estadio" id="frequencia-estadio-front">
-                <label for="frequencia-estadio-front"> Vou ao estádio pelo menos uma vez por mês.</label>
-            </div>
+                <div class="componente-form">
+                    <label> Opções: </label>
+                    <br>
+                    <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
+                    <label for="socio-torcedor-front"> Tenho cartão de sócio torcedor.</label>
+                    <br>
+                    <input type="checkbox" name="frequencia-estadio" id="frequencia-estadio-front">
+                    <label for="frequencia-estadio-front"> Vou ao estádio pelo menos uma vez por mês.</label>
+                </div>
 
-            <div class="componente-form">
-                <label for="time-front">Seu time de coração:</label>
-                <select name="time" id="time-front">
-                    <option> Escolha seu time: </option>
-                    <option value="sfc"> Pexaum</option>
-                    <option value="cu"> Curintia</option>
-                    <option value="spfc"> Bambis</option>
-                    <option value="pal"> Sem Mundial</option>
-                </select>
-            </div>
+                <div class="componente-form">
+                    <label for="time-front">Seu time de coração:</label>
+                    <select name="time" id="time-front">
+                        <option> Escolha seu time: </option>
+                        <option value="sfc"> Pexaum</option>
+                        <option value="cu"> Curintia</option>
+                        <option value="spfc"> Bambis</option>
+                        <option value="pal"> Sem Mundial</option>
+                    </select>
+                </div>
 
-            <div class="componente-form">
-                <label for="satisfacao-front">Nível de satisfação do seu time: </label>
-                <br>
-                <input type="range" name="satisfacao" id="satisfacao-front" min="0" max="10" value="5">
-            </div>
+                <div class="componente-form">
+                    <label for="satisfacao-front">Nível de satisfação do seu time: </label>
+                    <br>
+                    <input type="range" name="satisfacao" id="satisfacao-front" min="0" max="10" value="5">
+                </div>
 
-            <div class="componente-form">
-                <label for="sugestao-front"> Deixe aqui sua sugestão: </label>
-                <br>
-                <textarea name="sugestao" id="sugestao-front" cols="50" rows="5"
-                    placeholder="Digite sua sugestão..."></textarea>
-            </div>
-        </fieldset>
+                <div class="componente-form">
+                    <label for="sugestao-front"> Deixe aqui sua sugestão: </label>
+                    <br>
+                    <textarea name="sugestao" id="sugestao-front" cols="50" rows="5"
+                        placeholder="Digite sua sugestão..."></textarea>
+                </div>
+            </fieldset>
 
-        <fieldset>
-            <legend>Dados do seu prêmio:</legend>
-        </fieldset>
+            <fieldset>
+                <legend>Dados do seu prêmio:</legend>
 
-        <div class="componente-form">
+                <div class="componente-form">
+                    <label for="time2-front">Qual o seu 2º time de coração?</label>
+                    <input type="text" name="time2" id="time2-front" placeholder="Digite seu 2º time...">
+                </div>
+
+                <div class="componente-form">
+                    <label for="final-front">Qual final internacional gostaria de assistir?</label>
+                    <br>
+                    <select name="final" id="final-front">
+                        <option value="selecione"> Seleciona uma...</option>
+                        <option value="uefa"> UEFA</option>
+                        <option value="lib"> Libertadores</option>
+                        <option value="nac"> Campeonato Nacional</option>
+                    </select>
+                </div>
+
+                <div class="componente-form">
+                    <label for="premiacao-front"> Na premiação: </label>
+                    <br>
+                    <input type="checkbox" name="visita-estadio" id="visita-estadio-front">
+                    <label for="visita-estadio-front"> Incluir visita ao estádio.</label>
+                    <br>
+                    <input type="checkbox" name="visita-titulos" id="visita-titulos-front">
+                    <label for="visita-titulos-front"> Incluir visita a galeria de títulos do clube.</label>
+                </div>
+
+                <div class="componente-form">
+                    <label for="transporte-front"> Transporte (pago pelo premiado, SE VIRA)</label>
+                    <br>
+                    <input type="radio" value="terrestre" name="transporte" id="transporte-ter-front">
+                    <label for="transporte-ter-front"> Terrestre</label>
+                    <br>
+                    <input type="radio" value="aereo" name="transporte" id="transporte-aer-front">
+                    <label for="transporte-aer-front"> Aéreo</label>
+                </div>
+
+                <div class="componente-form">
+                    <label for="pagamento-front">Forma de pagamento:</label>
+                    <br>
+                    <input type="radio" value="vista" name="pagamento" id="pagamento-vis-front">
+                    <label for="pagamento-vis-front"> À vista</label>
+                    <br>
+                    <input type="radio" value="boleto" name="pagamento" id="pagamento-bol-front">
+                    <label for="pagamento-bol-front"> Boleto</label>
+                    <br>
+                    <input type="radio" value="credito" name="pagamento" id="pagamento-cre-front">
+                    <label for="pagamento-cre-front"> Crédito - Até 3x s/ juros</label>
+                </div>
+
+                <div class="componente-form">
+                    <label for="pcd-front"> Portador de necessidades especiais?</label>
+                    <br>
+                    <input type="radio" value="sim" name="pcd" id="pcd-sim-front">
+                    <label for="pcd-sim-front"> Sim</label>
+                    <br>
+                    <input type="radio" value="nao" name="pcd" id="pcd-nao-front">
+                    <label for="pcd-nao-front"> Não</label>
+                    <br>
+                    <label for="pcd-front">Se sim, quais?</label>
+                    <input type="text" name="pcd" id="pcd-sim-front" placeholder="Digite aqui quais...">
+                </div>
+
+                <div class="componente-form">
+                    <label for="observacao-front"> Deixe aqui sua sugestão: </label>
+                    <br>
+                    <textarea name="observacao" id="observacao-front" cols="50" rows="5"
+                        placeholder="Digite suas observações..."></textarea>
+                </div>
+
+
+            </fieldset>
+        </div>
+
+
+        <div class="componente-form novaclasse">
             <input class="btn" type="reset" value="Limpar Dados">
             <input class="btn" type="submit" value="Enviar">
         </div>
+
     </form>
 
 </body>

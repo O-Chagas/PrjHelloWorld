@@ -1,27 +1,37 @@
+form {
+    width: 50%;
+}
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    margin: 20px 0px 0px 20px;
+    font-size: 2rem;
+    margin: 20px 0px 20px 20px;
 }
 
-body {
-   padding: 10px 0px 0px 10px;
+.componente-form {  
+   padding: 5px 0px 0px 10px;
+   margin-bottom: 1rem;
 }
 
 label {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
-fieldset {
+fieldset {    
+    background-color: #f19b9b;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     border: 2px solid #000;
     border-radius: 20px;
-    padding: 10px;
-    margin-right: 1400px;
-    margin-bottom: 10px;
+    padding: 10px;  
+    width: 45%;
+}
+
+legend {
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
 }
 
 .btn {
@@ -29,7 +39,19 @@ fieldset {
     margin-top: 10px;
     border: 2px double;
     border-radius: 10px;
-    background-color: #f08080;
+    background-color: #f19b9b;
     padding: 5px;
+        
+    
 }
 
+.formularios {    
+    display:flex;    
+    justify-content: space-around;
+    
+}
+
+.novaclasse {
+    width: 18%;
+    margin: auto;
+}
